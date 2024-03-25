@@ -3,12 +3,16 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
-
-
+import { useEffect } from 'react';
 
 //npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+//CHAT GPT React Help**
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Anthony Trevino Website"; // Change to your desired title
+  }, []);
 
   const imageUrl = "https://storage.googleapis.com/at_professional_objects/IMG_3817%20(1).JPG";
 
@@ -24,37 +28,40 @@ function App() {
            <div style={{ alignItems: 'right', marginLeft: '50px'}} >  
             <h1 style={{ marginTop: '0px', marginBottom: '2px'}}>Anthony B. Trevino</h1>
             <h2 style={{ marginTop: '0px', fontSize: '18px'}}>Information Technology Architecture and Product Leader</h2> 
-            <div style={{ display: 'flex', marginTop: '0px'}}>
+            <div style={{ display: 'flex', marginTop: '40px', marginBottom: '0px'}}>
                 {/* Social Media Icons */}
                 <a href="https://storage.googleapis.com/at_professional_objects/Anthony%20Trevino%20Resume.pdf" style={{ margin: '0 10px' }}>
-                <FontAwesomeIcon icon={faFileAlt} size="2x" />
+                <FontAwesomeIcon icon={faFileAlt} size="lg" style={{ color: '#333' }}/>
                 </a>
                 <a href="https://www.linkedin.com/in/anthony-trevinoo/" style={{ margin: '0 10px' }}>
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                <FontAwesomeIcon icon={faLinkedin} size="lg" style={{ color: '#333' }} />
                 </a>
                 <a href="https://github.com/trevino293" style={{ margin: '0 10px' }}>
-                <FontAwesomeIcon icon={faGithub} size="2x" />
+                <FontAwesomeIcon icon={faGithub} size="lg" style={{ color: '#333' }}/>
                 </a>
             </div>
            </div>
         </div>
 
-        <div> <hr style={{ width: '100%', height: '1px', border: 'none', backgroundColor: '#800000', marginTop: '15px' }} /> </div>
+        <div> <hr style={{ width: '100%', height: '1px', border: 'none', backgroundColor: '#800000', marginTop: '10px', marginLeft: '75px', marginLRight: '75px' }} /> </div>
 
         <div style={{ display: 'flex', marginTop: '5px', marginLeft: '100px', marginRight: '100px', width: '100%', justifyContent: 'space-between' }}>
             {/* Skills Section */}
-            <div style={{ width: '25%' }}>
-                <h2 style={{textAlign: 'left'}}> Skills</h2>
+            <div style={{ width: '20%', textAlign: 'left', marginRight: '15px',}}>
+                <h2>Core Skills</h2>
                 <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
+                <li>Product Management</li>
+                <li>Python</li>
+                <li>Docementation: Markdown, Confluence, Jira</li>
+                <li>Data Governance</li>
+                <li>Cloud Architecture</li>
+                <li>Lean Six Sigma</li>
                 </ul>
             </div>
             {/* About Section */}
-            <div style={{ width: '75%', textAlign: 'left'}}>
-                <h2 > Introduction</h2>
-                <p  style={{ marginLeft: '15px'}}>
+            <div style={{ width: '80%', textAlign: 'left'}}>
+                <h2 style={{ marginLeft: '40px'}}> Introduction</h2>
+                <p  style={{ marginLeft: '45px'}}>
                 This is where you can introduce yourself. Talk about your background,
                 experiences, and interests. You might also want to mention your
                 professional goals and what you're passionate about. This section
