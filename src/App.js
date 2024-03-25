@@ -18,7 +18,7 @@ function App() {
         {/* Header with Image, Name, Subtitle & Icons*/}
         <div style={{ display: 'flex', alignItems: 'center', width: '100%', marginTop: '15px'}}>
            <div style={{marginRight: '0px'}}>
-            <img src={imageUrl} alt="Anthony" style={{ width: '170px', height: '170px', borderRadius: '50%', marginLeft: '125px'}} />
+            <img src={imageUrl} alt="Anthony" style={{ width: '150px', height: '150px', borderRadius: '50%', marginLeft: '125px'}} />
            </div>
           
            <div style={{ alignItems: 'right', marginLeft: '50px'}} >  
@@ -41,10 +41,10 @@ function App() {
 
         <div> <hr style={{ width: '100%', height: '1px', border: 'none', backgroundColor: '#800000', marginTop: '15px' }} /> </div>
 
-        <div style={{ display: 'flex', marginTop: '50px', marginLeft: '100px', width: '100%', justifyContent: 'space-between' }}>
+        <div style={{ display: 'flex', marginTop: '5px', marginLeft: '100px', marginRight: '100px', width: '100%', justifyContent: 'space-between' }}>
             {/* Skills Section */}
             <div style={{ width: '25%' }}>
-                <h2>Skills</h2>
+                <h2 style={{textAlign: 'left'}}> Skills</h2>
                 <ul>
                 <li>Skill 1</li>
                 <li>Skill 2</li>
@@ -52,9 +52,9 @@ function App() {
                 </ul>
             </div>
             {/* About Section */}
-            <div style={{ width: '75%', textAlign: 'center' }}>
-                <h2>Introduction</h2>
-                <p>
+            <div style={{ width: '75%', textAlign: 'left'}}>
+                <h2 > Introduction</h2>
+                <p  style={{ marginLeft: '15px'}}>
                 This is where you can introduce yourself. Talk about your background,
                 experiences, and interests. You might also want to mention your
                 professional goals and what you're passionate about. This section
@@ -63,14 +63,32 @@ function App() {
                 </p>
             </div>
         </div>
-        <div style={{ display: 'flex', marginTop: '50px', marginLeft: '100px', width: '100%', justifyContent: 'space-between' }}>
-            {/* Skills Section */}
+        
+        <div style={{ display: 'flex', marginTop: '5px', marginLeft: '100px', marginRight: '100px', width: '100%', justifyContent: 'space-between' }}>
+            {/* LEFT Placeholder Section */}
             <div style={{ width: '25%' }}>
             </div>
             {/* About Section */}
-            <div style={{ width: '75%', textAlign: 'center' }}>
-                <h2>Industry Experience</h2>
-                <p>
+            <div style={{ width: '75%', textAlign: 'left' }}>
+                <h2>Experience</h2>
+                <h2 style={{ fontSize: '20px', marginLeft: '10px'}}>Industry Experience</h2>
+                <p style={{ marginLeft: '15px'}}>
+                This is where you can introduce yourself. Talk about your background,
+                experiences, and interests. You might also want to mention your
+                professional goals and what you're passionate about. This section
+                gives visitors a glimpse into who you are beyond your professional
+                skills.
+                </p>  
+                <h2 style={{ fontSize: '20px', marginLeft: '10px'}}>Industry Experience</h2>
+                <p style={{ marginLeft: '15px'}}>
+                This is where you can introduce yourself. Talk about your background,
+                experiences, and interests. You might also want to mention your
+                professional goals and what you're passionate about. This section
+                gives visitors a glimpse into who you are beyond your professional
+                skills.
+                </p>
+                <h2 style={{ fontSize: '20px', marginLeft: '10px'}}>Industry Experience</h2>
+                <p style={{ marginLeft: '15px'}}>
                 This is where you can introduce yourself. Talk about your background,
                 experiences, and interests. You might also want to mention your
                 professional goals and what you're passionate about. This section
@@ -79,6 +97,31 @@ function App() {
                 </p>
             </div>
         </div>
+
+        <div style={{ display: 'flex', marginTop: '5px', marginLeft: '100px', marginRight: '100px', width: '100%', justifyContent: 'space-between' }}>
+            {/* LEFT Placeholder Section */}
+            <div style={{ width: '25%' }}>
+            </div>
+            {/* About Section */}
+            <div style={{ width: '75%', textAlign: 'left' }}>
+                <h2>Education</h2>  
+                <h2 style={{ fontSize: '20px', marginLeft: '10px', marginBottom: '2px'}}>Master of Science, Computer Science</h2>
+                <h2 style={{ fontSize: '20px', marginLeft: '10px', marginTop: '2px'}}>Georgia Institute of Technology</h2>
+                <p style={{ marginLeft: '15px'}}>
+                August 2023 to May 2025
+                Specialization in Artificial Intelligence 
+                </p>
+                <h2 style={{ fontSize: '20px', marginLeft: '10px'}}>Industry Experience</h2>
+                <p style={{ marginLeft: '15px'}}>
+                This is where you can introduce yourself. Talk about your background,
+                experiences, and interests. You might also want to mention your
+                professional goals and what you're passionate about. This section
+                gives visitors a glimpse into who you are beyond your professional
+                skills.
+                </p>
+            </div>
+        </div>
+
     </div>
   );
 }
