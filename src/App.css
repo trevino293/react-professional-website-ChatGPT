@@ -85,8 +85,45 @@
 }
 
 .tools-bubble:hover {
-  /* Slightly raise the bubble on hover */
+/* Slightly raise the bubble on hover */
   transform: translateY(-0px); /* Moves the bubble up for a "lifting" effect */
   /* Adjust the shadow to make it appear as though the light source has moved */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.certs-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #8fbc8f; 
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+
+  box-sizing: border-box;
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+
+  /* Box Shadow for Depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+.certs-bubble:hover {
+/* Slightly raise the bubble on hover */
+  transform: translateY(-0px); /* Moves the bubble up for a "lifting" effect */
+  /* Adjust the shadow to make it appear as though the light source has moved */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3)
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+html {
+  scroll-behavior: smooth;
 }
