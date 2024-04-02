@@ -1,0 +1,130 @@
+.App-header {
+  background-color: #b0e0e6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #b0e0e6;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile h1 {
+  margin: 0.5em 0;
+}
+
+.profile h2 {
+  margin: 0.5em 0;
+  font-size: '12px';
+}
+
+.profile p {
+  margin: 1em auto;
+  max-width: 600px;
+}
+
+.profile ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: 'center';
+}
+
+.profile li {
+  margin: 0.4em 0;
+  text-align: 'center';
+}
+
+.skill-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #D3BCC0; /* Light maroon color */
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  box-sizing: border-box;
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+
+  /* Box Shadow for Depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+/*.skill-bubble:hover {
+   Slightly raise the bubble on hover 
+  transform: translateY(-0px); /* Moves the bubble up for a "lifting" effect 
+   Adjust the shadow to make it appear as though the light source has moved 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}*/
+
+.tools-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #b0c4de; /* Light Steel Blue*/
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+
+  box-sizing: border-box;
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+
+  /* Box Shadow for Depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+/*.tools-bubble:hover {
+ Slightly raise the bubble on hover 
+  transform: translateY(-0px); /* Moves the bubble up for a "lifting" effect 
+  Adjust the shadow to make it appear as though the light source has moved 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+ }
+  */
+
+.certs-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #8fbc8f; 
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+
+  box-sizing: border-box;
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+
+  /* Box Shadow for Depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+/*.certs-bubble:hover {
+ Slightly raise the bubble on hover 
+  transform: translateY(-0px); /* Moves the bubble up for a "lifting" effect 
+  Adjust the shadow to make it appear as though the light source has moved 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3)
+}*/
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
