@@ -1,0 +1,10 @@
+runtime: nodejs
+
+env: flex
+
+handlers:
+  - url: /static
+    static_dir: static
+    http_headers:
+      Cache-Control: public, max-age=604800
+
