@@ -1,4 +1,4 @@
-# react-professional-website
+# react-professional-website-ChatGPT
 A simple react website to display skills and accomplishments and some more detail than traditional resume built by ChatGPT
 
 # Creating a Professional Website with a Large Language Model
