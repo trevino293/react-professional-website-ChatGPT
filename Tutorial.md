@@ -98,7 +98,7 @@ Navigate to [localHost](http://localhost:3000/)
 ### 3.4 
 Stop the Website: Use ctrl+C to stop the program from running locally
 
-> [!NOTE]
+>[!NOTE]
 > If you close the command line instance without ending the program, the website is being hosted on your local machine until you shutdown the computer or end the process. You can navigate to the task manager and end the Node.js process to stop the program. 
 
 </details>
@@ -179,7 +179,7 @@ Initialize the project using the command:
 gcloud init
 ```
 
-> [!NOTE}
+>[!NOTE}
 > This is the Google Cloud SDK Terminal. When you installed the Google SDK a specific terminal client was installed. This specific client and Terminal must be used for gcloud commands.
 
 </details>
@@ -268,7 +268,7 @@ Navigate to Google Console and view deployment and costs.
 
 [Google App Engine](https://console.cloud.google.com/appengine/)
 
-> [!Note]
+>[!Note]
 > Navigate to Settings and Disable Application 
 > - Pause all Cost and Compute 
 
