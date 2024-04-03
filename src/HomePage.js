@@ -7,21 +7,28 @@ import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import antimageUrl from './images/IMG_3817.JPG';
+import ameximageUrl from './images/American_Express_logo_(2018).svg.png';
+import NBCimageUrl from './images/NBC_logo_2022.svg.png';
+import GTimageUrl from './images/georgia-tech-yellow-jackets-logo-png-transparent.png';
+import ASUimageUrl from './images/asu-seeklogo.svg';
+
+
+
 const HomePage = () => {
   
   useEffect(() => {
     document.title = "Anthony Trevino"; // Change to your desired title
   }, []);
 
-  const antimageUrl = "https://storage.googleapis.com/at_professional_objects/IMG_3817%20(1).JPG";
-  const ameximageUrl = "https://storage.googleapis.com/at_professional_objects/American_Express_logo_(2018).svg.png";
-  const NBCimageUrl = "https://storage.googleapis.com/at_professional_objects/NBC_logo_2022.svg.png";
-  const GTimageUrl = "https://storage.googleapis.com/at_professional_objects/georgia-tech-yellow-jackets-logo-png-transparent.png";
-  const ASUimageUrl = "https://storage.googleapis.com/at_professional_objects/asu-seeklogo.svg";
+  //const ameximageUrl = "https://storage.googleapis.com/at_professional_objects/American_Express_logo_(2018).svg.png";
+  //const NBCimageUrl = "https://storage.googleapis.com/at_professional_objects/NBC_logo_2022.svg.png";
+  //const GTimageUrl = "https://storage.googleapis.com/at_professional_objects/georgia-tech-yellow-jackets-logo-png-transparent.png";
+  //const ASUimageUrl = "https://storage.googleapis.com/at_professional_objects/asu-seeklogo.svg";
 
   const skills = ["Product Management","Cloud Architecture","Data Governance","Lean Six Sigma","Executive Leadership", ]
   const tools = ["Python", "Java", "Google Cloud Platform", "Markdown, Confluence, Jira"]
-  const certs = ["Google Cloud Architect", "Lean Six Sigma Greenbelt", "SAFe POPM"]
+  const certs = ["Google Cloud Architect", "Lean Six Sigma Greenbelt", "Agile: SAFe POPM"]
 
   const itemsAmex = ["Strategy and solution architect driving 6 year program roadmap to modernization on-premise hadoop/spark infrastructure to google hosted private cloud", 
                         "Migration of 300 user-facing data decisioning deployments alongside a 2000+ analytical user community", 
@@ -35,10 +42,9 @@ const HomePage = () => {
   return (
         <div style={{ width: '1000px', margin: '0 auto' }}> {/*Website Container = Max Width*/}
             
-            <div>
+            
                 {/* Header with Image, Name, Subtitle & Icons*/}
-                <div style={{ display: 'flex', alignItems: 'center', width: '100%', marginTop: '15px'}}>
-                    
+                <div style={{ display: 'flex', alignItems: 'center', width: '100%', marginTop: '15px'}}>               
                     <div style={{marginRight: '0px'}}>
                         <img src={antimageUrl} alt="Anthony" style={{ width: '150px', height: '150px', borderRadius: '50%', marginLeft: '125px'}} />
                     </div>
@@ -51,7 +57,7 @@ const HomePage = () => {
                             {/* Social Media Icons */}
                             <div>
                                 <div>
-                                <a href="https://storage.googleapis.com/at_professional_objects/Anthony%20Trevino%20Resume.pdf" style={{ margin: '0 15px' }}>
+                                <a href="https://storage.googleapis.com/professional-objects/Anthony%20Trevino%20Resume.pdf" style={{ margin: '0 15px' }}>
                                 <FontAwesomeIcon icon={faFileAlt} size="2x" style={{ color: '#333' }}/>
                                 </a>
                                 </div>
@@ -66,8 +72,7 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-
+       
             <div> <hr style={{ width: '100%', height: '1px', border: 'none', backgroundColor: '#800000', marginTop: '10px', marginLeft: '75px', marginLRight: '75px' }} /> </div>
         
         
@@ -89,13 +94,13 @@ const HomePage = () => {
 
                 {/* About Section */}
                 <div style={{ width: '80%', textAlign: 'left'}}>
-                    <h2 style={{fontSize: '20px', marginLeft: '30px'}}> Hello I'm Anthony, </h2>
-                    <p  style={{ marginLeft: '45px'}}>
+                    <h2 style={{fontSize: '20px', marginLeft: '30px', marginBottom: '10px'}}> Hello I'm Anthony, </h2>
+                    <p  style={{ marginLeft: '45px', marginBottom: '10px'}}>
                     Welcome to my website! I'm a information technology professional with over five years of experience in infrastructure, governance, product management and solution architecture.
                     This is a place to share my work experience, skills and projects.  
                     </p>
                     
-                    <p  style={{ marginLeft: '45px'}}>
+                    <p  style={{ marginLeft: '45px', marginBottom: '10px'}}>
                     Additionally documentation of relevant and interesting architectures I define such as building this website will be stored here under <Link to="/Sample-Architecture">Sample Architecture</Link>.
                     </p>
 
@@ -194,7 +199,7 @@ const HomePage = () => {
                 <div style={{ width: '80%', textAlign: 'left' }}>
                     <h2 style={{fontSize: '20px', marginLeft: '30px'}}> Education</h2>  
                     <div style={{display: 'flex', width: '100%', textAlign: 'left' }}>
-                        <div style={{width: '25%', marginRight: '0px', marginTop: '15px'}}>
+                        <div style={{width: '25%', marginRight: '0px', marginTop: '5px'}}>
                             <img src={GTimageUrl} alt="GT Logo" style={{ width: '100px', height: '100px', marginLeft: '75px'}} />
                         </div>
                         <div style={{width: '75%', marginRight: '0px'}}>
@@ -211,7 +216,7 @@ const HomePage = () => {
 
                     <div style={{display: 'flex', width: '100%', textAlign: 'left', marginTop: '15px' }}>
                         <div style={{width: '25%', marginRight: '0px', marginTop: '15px'}}>
-                            <img src={ASUimageUrl} alt="ASU Logo" style={{ width: '75px', height: '75px', marginLeft: '75px'}} />
+                            <img src={ASUimageUrl} alt="ASU Logo" style={{ width: '75px', height: '75px', marginLeft: '90px'}} />
                         </div>
                         <div style={{width: '75%', marginRight: '0px'}}>
                             <h2 style={{ fontSize: '18px', marginLeft: '0px', marginTop: '2px', marginBottom: '2px'}}>Arizona State University</h2>

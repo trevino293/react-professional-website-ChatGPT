@@ -57,12 +57,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
 }
 
-.skill-bubble:hover {
-  /* Slightly raise the bubble on hover */
-  transform: translateY(-0px); /* Moves the bubble up for a "lifting" effect */
-  /* Adjust the shadow to make it appear as though the light source has moved */
+/*.skill-bubble:hover {
+   Slightly raise the bubble on hover 
+  transform: translateY(-0px); /* Moves the bubble up for a "lifting" effect 
+   Adjust the shadow to make it appear as though the light source has moved 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
+}*/
 
 .tools-bubble {
   display: flex;
@@ -84,12 +84,13 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
 }
 
-.tools-bubble:hover {
-/* Slightly raise the bubble on hover */
-  transform: translateY(-0px); /* Moves the bubble up for a "lifting" effect */
-  /* Adjust the shadow to make it appear as though the light source has moved */
+/*.tools-bubble:hover {
+ Slightly raise the bubble on hover 
+  transform: translateY(-0px); /* Moves the bubble up for a "lifting" effect 
+  Adjust the shadow to make it appear as though the light source has moved 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
+ }
+  */
 
 .certs-bubble {
   display: flex;
@@ -111,12 +112,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
 }
 
-.certs-bubble:hover {
-/* Slightly raise the bubble on hover */
-  transform: translateY(-0px); /* Moves the bubble up for a "lifting" effect */
-  /* Adjust the shadow to make it appear as though the light source has moved */
+/*.certs-bubble:hover {
+ Slightly raise the bubble on hover 
+  transform: translateY(-0px); /* Moves the bubble up for a "lifting" effect 
+  Adjust the shadow to make it appear as though the light source has moved 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3)
-}
+}*/
 
 nav {
   position: sticky;
