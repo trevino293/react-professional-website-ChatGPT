@@ -1,6 +1,11 @@
 # Creating a Professional Website with a Large Language Model
 ### Author: Anthony Trevino
 ### Date: 04/02/2024
+### v1.0
+
+### Front-End: React
+
+### Back-End: Google Cloud App Engine
 
 ### Chat GPT Transcript 
 
@@ -13,8 +18,9 @@ I have limited development experience in general, even more so in front-end but 
 
 [Anthony Trevino Professional Website](https://atrevino.net)
 
-[!NOTE]
-> I'm an active computer science graduate student and information technology professional, I understand the technology is overwhelming. I feel if you can lean into the LLM's power the process will be easier for anyone! 
+>[!NOTE]
+> I'm an active computer science graduate student and information technology professional, I understand the technology is overwhelming. 
+> I feel if you can lean into the LLM's power, the process may be easier for many people. 
 
 
 # 1. Front End Tool Install
@@ -92,7 +98,7 @@ Navigate to [localHost](http://localhost:3000/)
 ### 3.4 
 Stop the Website: Use ctrl+C to stop the program from running locally
 
-[!NOTE]
+> [!NOTE]
 > If you close the command line instance without ending the program, the website is being hosted on your local machine until you shutdown the computer or end the process. You can navigate to the task manager and end the Node.js process to stop the program. 
 
 </details>
@@ -102,10 +108,10 @@ Stop the Website: Use ctrl+C to stop the program from running locally
 <details>
 	<summary>Step 4</Summary>
 
-
+### 4.1
 Define the structure and components of the website at a high level that you desire
 
-
+### 4.2
 Prompt Chat GPT (My Conversation):
 
 ```
@@ -138,5 +144,149 @@ Re-deploy app and observe changes
 
 # 7. Get Domain Name
 
-Use domain provider to reserve desired domain name.
+<details>
+	<summary>Step 7</Summary>
+
+Use domain provider to reserve or purchase desired domain name.
+
+</details>
+
+# 8. Setup Google SDK
+
+<details>
+	<summary>Step 8</Summary>
+
+**Tool:** App Engine
+
+**Reasoning:** For this project I selected to use AppEngine for deployment to minimize infrastructure setup complexity. 
+
+### 8.1
+Install google SDK within the (my-app/) folder
+
+Download: [Install Google SDK Docs](https://cloud.google.com/sdk/docs/install-sdk)
+
+### 8.2
+Login to Google Cloud account with your credentials using the command:
+
+```
+gcloud auth login
+```
+
+### 8.3
+Initialize the project using the command:
+
+```
+gcloud init
+```
+
+> [!NOTE}
+> This is the Google Cloud SDK Terminal. When you installed the Google SDK a specific terminal client was installed. This specific client and Terminal must be used for gcloud commands.
+
+</details>
+
+# 9. Create app.yaml and Dockerfile
+<details>
+	<summary>Step 9</Summary>
+
+### 9.1
+
+
+- This file will tell Google cloud how to setup your website infrastructure
+- Suggestion: Prompt chat GPT to help create one
+
+Example: app.yaml
+
+```
+runtime: nodejs
+
+env: flex
+
+handlers:
+  - url: /static
+    static_dir: static
+    http_headers:
+      Cache-Control: public, max-age=604800
+```
+
+### 9.2
+
+Example: Dockerfile
+- This file will tell Google cloud how to setup your website infrastructure
+- Suggestion: Prompt chat GPT to help create one
+
+```
+# Use the official lightweight Node.js 12 image.
+# https://hub.docker.com/_/node
+FROM node:12-slim
+
+# Create and change to the app directory.
+WORKDIR /usr/src/app
+
+# Copy application dependency manifests to the container image.
+# A wildcard is used to ensure both package.json AND package-lock.json are copied.
+# Copying this separately prevents re-running npm install on every code change.
+COPY package*.json ./
+
+# Install production dependencies.
+RUN npm install --only=production
+
+# Copy local code to the container image.
+COPY . ./
+
+# Run the web service on container startup.
+CMD [ "npm", "start" ]
+```
+
+</details>
+
+# 10. Build and Deploy
+
+<details>
+	<summary>Step 10</Summary>
+
+
+
+### 10.1 
+
+Package your application for deployment with the command line at (my-app/) using the command:
+
+```
+npm run build
+```
+
+### 10.2
+
+Open the Google SDK Terminal and deploy your application to Google App Engine using the command:
+
+```
+gcloud app deploy
+```
+
+### 10.3
+
+Navigate to Google Console and view deployment and costs.
+
+[Google App Engine](https://console.cloud.google.com/appengine/)
+
+> [!Note]
+> Navigate to Settings and Disable Application 
+> - Pause all Cost and Compute 
+
+
+### 10.4
+Make changes to DNS settings for custom addresses.
+- Google App engine > Settings >  Custom Domains > Add Custom Domain
+- Domain Provider > Add in CNAM and A, AAAA Data
+
+</details>
+
+
+# Conclusion
+
+Chat GPT is a powerful accelerator to code generation and basic understanding. 
+It will take some manual troubleshooting by either re-querying chat GPT mentioning a visible error or using a traditional google search of the error to fix.
+Additionally although Chat GPT generated the code, it takes some time to understand the language and interactions between folders, files and functions. 
+I feel with the support of large language models many more people will be able to access complex technology. 
+It will be important to highlight the risks of potential local vulnerability creation from hallucinations or misleading design by large language model. 
+
 
