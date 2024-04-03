@@ -187,7 +187,7 @@ gcloud init
 
 </details>
 
-> [!NOTE}
+> [!NOTE]
 > This is the Google Cloud SDK Terminal. When you installed the Google SDK a specific terminal client was installed. This specific client and Terminal must be used for gcloud commands.
 
 # 9. Create app.yaml and Dockerfile
