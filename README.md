@@ -1,5 +1,6 @@
 # react-professional-website-ChatGPT
-A simple react website to display skills and accomplishments and some more detail than traditional resume built by ChatGPT
+A simple react website to display skills and accomplishments and some more detail than traditional resume built by ChatGPT.
+
 
 # Creating a Professional Website with a Large Language Model
 ### Author: Anthony Trevino
@@ -101,10 +102,12 @@ Navigate to [localHost](http://localhost:3000/)
 ### 3.4 
 Stop the Website: Use ctrl+C to stop the program from running locally
 
->[!NOTE]
-> If you close the command line instance without ending the program, the website is being hosted on your local machine until you shutdown the computer or end the process. You can navigate to the task manager and end the Node.js process to stop the program. 
+
 
 </details>
+
+> [!Caution]
+> If you close the command line instance without ending the program, the website is being hosted on your local machine until you shutdown the computer or end the process. You can navigate to the task manager and end the Node.js process to stop the program. 
 
 # 4. Envision Website Design and Prompt Chat GPT to Create
 
@@ -182,10 +185,10 @@ Initialize the project using the command:
 gcloud init
 ```
 
->[!NOTE}
-> This is the Google Cloud SDK Terminal. When you installed the Google SDK a specific terminal client was installed. This specific client and Terminal must be used for gcloud commands.
-
 </details>
+
+> [!NOTE}
+> This is the Google Cloud SDK Terminal. When you installed the Google SDK a specific terminal client was installed. This specific client and Terminal must be used for gcloud commands.
 
 # 9. Create app.yaml and Dockerfile
 <details>
@@ -271,17 +274,17 @@ Navigate to Google Console and view deployment and costs.
 
 [Google App Engine](https://console.cloud.google.com/appengine/)
 
->[!Note]
-> Navigate to Settings and Disable Application 
-> - Pause all Cost and Compute 
-
-
 ### 10.4
 Make changes to DNS settings for custom addresses.
 - Google App engine > Settings >  Custom Domains > Add Custom Domain
 - Domain Provider > Add in CNAM and A, AAAA Data
 
 </details>
+
+>[!Caution]
+> Navigate to Settings and Disable Application 
+> - Pause all Cost and Compute 
+> - Validate ChatGPT prescription of hardware in app.yaml
 
 
 # Conclusion
@@ -291,3 +294,5 @@ It will take some manual troubleshooting by either re-querying chat GPT mentioni
 Additionally although Chat GPT generated the code, it takes some time to understand the language and interactions between folders, files and functions. 
 I feel with the support of large language models many more people will be able to access complex technology. 
 It will be important to highlight the risks of potential local vulnerability creation from hallucinations or misleading design by large language model. 
+
+
