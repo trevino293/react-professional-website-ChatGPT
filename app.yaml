@@ -1,10 +1,14 @@
 runtime: nodejs
-
 env: flex
 
-handlers:
-  - url: /static
-    static_dir: static
-    http_headers:
-      Cache-Control: public, max-age=604800
+manual_scaling:
+  instances: 1  # Set to 1 to use a single instance
 
+resources:
+  cpu: 2
+  memory_gb: 2
+  disk_size_gb: 20
+
+handlers:
+- url: /.*
+  script: auto
