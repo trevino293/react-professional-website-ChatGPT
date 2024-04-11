@@ -22,6 +22,8 @@ I have limited development experience in general, even more so in front-end but 
 
 [Anthony Trevino Professional Website](https://atrevino.net)
 
+![image](src/images/atrevino_net_architecture.png)
+
 >[!NOTE]
 > I'm an active computer science graduate student and information technology professional, I understand the technology is overwhelming. 
 > I feel if you can lean into the LLM's power, the process may be easier for many people. 
