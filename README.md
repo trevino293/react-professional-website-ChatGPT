@@ -20,8 +20,6 @@ Conversation with Chat GPT: [(GPT 3.5 Chat)](https://chat.openai.com/share/fe45e
 This document describes the high-level steps and process to create a professional website from "scratch". 
 I have limited development experience in general, even more so in front-end but with the accuracy and creativity of chat GPT I was able to develop my website in less than 20 hours. 
 
-[Anthony Trevino Professional Website](https://atrevino.net)
-
 ![image](src/images/atrevino_net_architecture.png)
 
 >[!NOTE]
